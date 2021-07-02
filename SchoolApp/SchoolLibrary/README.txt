@@ -1,0 +1,2 @@
+﻿The Elementary and HighSchool folders contain classes of the same name volume. This is to demonstrate how to avoid data collision
+by separating the classes into different locations in order to use them later for inheritance.
