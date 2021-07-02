@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "e7KWe54OwNOs1LkeJ1q5GBMHCZYWYOBU4niYqC5HXxaqSezv3Ow+8EAonTzvAUb2Zz/6sBHpgo6+sWo+tLEe5w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Matt\\Documents\\School\\SchoolApp\\SchoolLibrary\\SchoolLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
