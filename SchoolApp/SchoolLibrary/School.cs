@@ -37,5 +37,18 @@ namespace SchoolLibrary
         //Both classes can be used withou having any collisions.
         //Elementary.Volume volume;
         //HighSchool.Volume volume2;
-    }
+
+        // Constructors to handle intialization
+        public School()
+        {
+            Name = "Untitled School";
+            PhoneNumber = "555-1234";
+        }
+
+        public School(string SchoolName, string SchoolPhoneNumber)
+        {
+            Name = SchoolName;
+            PhoneNumber = SchoolPhoneNumber;
+        }
+    } 
 }
