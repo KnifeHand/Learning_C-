@@ -4,16 +4,16 @@ using System.Text;
 
 namespace SchoolLibrary
 {
-    class School
+    public class School
     {
-        string Name { get; set; } // Auto property uses encapsulation
-        string Address { get; set; }
-        string City { get; set; }
-        string State { get; set; }
-        string Zip { get; set; }
-        string PhoneNumber { get; set; }
-        string _twitterAddress; //backing variable that stores the value
-        string TwitterAddress
+        public string Name { get; set; } // Auto property uses encapsulation
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Zip { get; set; }
+        public string PhoneNumber { get; set; }
+        private string _twitterAddress; //backing variable that stores the value
+        public string TwitterAddress
         {
             //make sure the twitter address starts with @
             // need to add backing variable
