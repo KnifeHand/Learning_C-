@@ -12,10 +12,10 @@ namespace SchoolLibrary
         public string State { get; set; }
         public string Zip { get; set; }
         public string PhoneNumber { get; set; }
-        private string _twitterAddress; //backing variable that stores the value
+        private string _twitterAddress; // backing variable that stores the value
         public string TwitterAddress
         {
-            //make sure the twitter address starts with @
+            //make sure the twitter address starts with '@' symbol.
             // need to add backing variable
             get { return _twitterAddress; } // property that exposes the stored value by manipulating it.
             set
@@ -77,14 +77,34 @@ namespace SchoolLibrary
         // These methods are methods you can call without instantiating the class.
         // For instance if you wanted to use the Math class inside a method, converting
         // a public method to a public static method allows us to use the static methods
-        // of the Math class inside our function
+        // of the Math class inside our function.
         // These types of methods can be seen from outside the class without us having 
         // to instantiate it. 
 
         public static int AverageThreeScores(int a, int b, int c)
         {
+            //var temp = 15;                
+            //temp.ToString();  // How to convert an integer to a string type
             var result = (a + b + c) / 3;
             return result;
+        }
+
+        // Overriding the ToString() method:
+        // Every object in C# inherits from the base class object.
+        // Now when we call ToString() it will apply the format we want to our
+        // StringBuilder and construct the format we want to output.
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(Name);
+            sb.AppendLine(Address);
+            sb.AppendLine(City);
+            sb.AppendLine(", ");
+            sb.AppendLine(State);
+            sb.Append(" ");
+            sb.AppendLine(Zip);
+
+            return base.ToString();
         }
     } 
 }
