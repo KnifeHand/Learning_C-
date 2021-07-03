@@ -55,6 +55,7 @@ namespace SchoolLibrary
         // public methods can be defined and return the same type however,
         // methods that don't need to return anything need to be instantiated 
         // with "void" as void does not require a return statement.
+
         //public float AverageThreeScores(float a, float b, float c)
         //{
         //    var result = (a + b + c) / 3;
@@ -65,12 +66,22 @@ namespace SchoolLibrary
         // This is handy when we want to expose some very simple logic.
         // This might not be conventional if you have more complex logic that is
         // involved with a function. These are limited to simple returns.
-        public float AverageThreeScores(float a, float b, float c) => (a + b + c) / 3;
+       
+        public static float AverageThreeScores(float a, float b, float c) => (a + b + c) / 3;
 
-        // Overloaded method: two methods with the same name but different method signatures.
+        // Overloaded method:
+        // two methods with the same name but different method signatures.
         // Method signatures refer to the return type, the name, and the name type of the arguments.
         // Overloading is a form of "Polymorphism" that is a conerstone of OOP.
-        public int AverageThreeScores(int a, int b, int c)
+        // static methods:
+        // These methods are methods you can call without instantiating the class.
+        // For instance if you wanted to use the Math class inside a method, converting
+        // a public method to a public static method allows us to use the static methods
+        // of the Math class inside our function
+        // These types of methods can be seen from outside the class without us having 
+        // to instantiate it. 
+
+        public static int AverageThreeScores(int a, int b, int c)
         {
             var result = (a + b + c) / 3;
             return result;
